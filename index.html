@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Hangman</title>
+    </head>
+    <body>
+        <h1>Eeveevolution Hangman</h1>
+        <p>Adivina la eevvevolution escondida - Ingresa una letra</p>
+        <div class="card">
+            <img src="img/eevee.png" class="eeveePh" alt="eevee" style="width:100%">
+        </div>
+        <div class="game-container">
+            <svg height="250" width="200" class="figure-container">
+                <!-- Rod(baston)-->
+                <line x1="60" y1="20" x2="140" y2="20"/>                
+                <line x1="140" y1="20" x2="140" y2="50"/>                
+                <line x1="60" y1="20" x2="60" y2="230"/>                
+                <line x1="20" y1="230" x2="100" y2="230"/>
+                <!-- Head (cabeza)-->  
+                <circle cx="140" cy="70" r="20" class="figure-part" />              
+                <!--Body (cuerpo)-->
+                <line x1="140" y1="90" x2="140" y2="150" class="figure-part"/>
+                <!--Arms (brazos)-->
+                <line x1="140" y1="120" x2="120" y2="100" class="figure-part"/>
+                <line x1="140" y1="120" x2="120" y2="100" class="figure-part"/>
+                <!--Legs (piernas)-->
+                <line x1="140" y1="150" x2="120" y2="180" class="figure-part"/>
+                <line x1="140" y1="150" x2="120" y2="180" class="figure-part"/>
+            </svg>
+
+            <div class="wrong-lettes-container">
+                <div id="wrong-letters"></div>
+            </div>
+
+            <div class="word" id="word"></div>
+         </div>
+
+          <!-- Contenedor del mensaje final -->
+            <div class="popup-container" id="popup-container">
+                <div class="vEmergente">
+                <h2 id="final-message"></h2>
+                <h3 id="final-message-reveal-word"></h3>
+                <img id="lista-imagenes" class="imagenes" src="img/eevee.png" />
+                <button id="play-button">Volver a jugar</button>
+                </div>
+            </div>
+        
+            <!-- Notificacion -->
+            <div class="notification-container" id="notification-container">
+                <p>Ya se ingresó esa letra</p>
+            </div>
+
+            <script src="scripts.js"></script>    
+        </body>
+    </html>
