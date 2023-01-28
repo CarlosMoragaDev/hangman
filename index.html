@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
         <title>Hangman</title>
     </head>
     <body>
@@ -38,13 +39,25 @@
 
             <div class="word" id="word"></div>
          </div>
+         
 
           <!-- Contenedor del mensaje final -->
             <div class="popup-container" id="popup-container">
                 <div class="vEmergente">
                 <h2 id="final-message"></h2>
                 <h3 id="final-message-reveal-word"></h3>
-                <img id="lista-imagenes" class="imagenes" src="img/eevee.png" />
+                <!--<img id="lista-imagenes" class="image" src="img/eevee.png" />-->              
+                <div id="output-image" class="image" >
+                    <img class="image" value="flareon" />
+                    <img class="image" value="vaporeon" />
+                    <img class="image" value="jolteon" />
+                    <img class="image" value="espeon"  />
+                    <img class="image" value="umbreon" />
+                    <img class="image" value="glaceon" />
+                    <img class="image" value="leafeon" />
+                    <img class="image" value="sylveon" />            
+                </div>
+
                 <button id="play-button">Volver a jugar</button>
                 </div>
             </div>
@@ -56,4 +69,7 @@
 
             <script src="scripts.js"></script>    
         </body>
+        
+        
     </html>
+

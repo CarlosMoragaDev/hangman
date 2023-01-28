@@ -26,6 +26,9 @@ let playable = true;
 const letrasCorrectas = [];
 const letrasErroneas = [];
 
+//seleccionar imagen
+var images = document.querySelectorAll('.img');
+for (var i = images.length; i--;) images[i].addEventListener('click', mostrarPalabra);
 
 //funcion que muestra la palabra escondida
 function mostrarPalabra(){
@@ -45,13 +48,67 @@ function mostrarPalabra(){
     const innerWord = palabraE1.innerText.replace(/[ \n]/g, '');
 
     if (innerWord === palabraSeleccionada){
-        mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
-        mensajeFinalPalabraRevelada.innerText = '';
-        vEmergente.style.display = 'flex';
-        imagenes.style.display = 'flex';
-
-        playable = false;
+        if (palabraSeleccionada === 'flareon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img class= "image" src="img/flareon.png"></img>';
+            playable = false;
+        }       
+        else if (palabraSeleccionada === 'vaporeon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/vaporeon.png" class= "image" ></img>' ;
+            playable = false;
+        }
+        else if (palabraSeleccionada === 'jolteon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/jolteon.jpg"  class= "image" ></img>' ;
+            playable = false;
+        }
+        else if (palabraSeleccionada === 'espeon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/espeon.png" class= "image" ></img>' ;
+            playable = false;
+        }
+        else if (palabraSeleccionada === 'umbreon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/umbreon.png" class= "image"></img>' ;
+            playable = false;
+        }
+        else if (palabraSeleccionada === 'glaceon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/glaceon.png" class= "image" ></img>' ;
+            playable = false;
+        }
+        else if (palabraSeleccionada === 'leafeon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/leafeon.png" class= "image" ></img>' ;
+            playable = false;
+        }
+        else if (palabraSeleccionada === 'sylveon'){
+            mensajeFinal.innerText = 'Felicidades adivinaste la evolucion!';
+            mensajeFinalPalabraRevelada.innerText = '';
+            vEmergente.style.display = 'flex';
+            image = '<img src="img/sylveon.png" class= "image"></img>' ;
+            playable = false;
+        }
+            
     }
+    document.getElementById("output-image").innerHTML = image;
+
+    
 }
 
 //Funcion para actualizar las letras erroneas
@@ -79,9 +136,11 @@ function actualizarPalabraErroneaE1(){
         mensajeFinal.innerText = 'Lo siento, perdiste.';
         mensajeFinalPalabraRevelada.innerText = `... la evolucion era: ${palabraSeleccionada}`;
         vEmergente.style.display = 'flex';
+        imagenes.style.display = 'flex';
 
         playable = false;
     }
+
 }
 
 //funcion de mostrar notificacion

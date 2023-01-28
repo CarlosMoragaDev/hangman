@@ -25,13 +25,17 @@ h1 {
     width: 200px;
 }
 
-.imagenes {
-    display: flex;
+.image {
+    display:flex;
     align-items: center;
     height: 200px;
     width: 200px;
-    justify-content: center;
+    justify-content:center;
+    margin: 0 auto;
+    border-radius: 50%;
+  
 }
+
 
 .game-container {
     padding: 20px 30px;
@@ -99,6 +103,7 @@ h1 {
   display: none;
   align-items: center;
   justify-content: center;
+
 }
 
 .vEmergente {
@@ -144,3 +149,8 @@ h1 {
   transform: translateY(-50px);
 }
 
+footer{
+  background-color: darkslategrey;
+  align-items: center;
+  text-emphasis-color: white;
+}
