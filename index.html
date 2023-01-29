@@ -5,12 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Hangman</title>
     </head>
     <body>
-        <h1>Eeveevolution Hangman</h1>
-        <p>Adivina la eevvevolution escondida - Ingresa una letra</p>
+        <div class="title">            
+            <h1 class="title1">Eeveevolution Hangman</h1>
+            <p>Adivina la eevvevolution escondida - Ingresa una letra</p>
+        </div>
         <div class="card">
             <img src="img/eevee.png" class="eeveePh" alt="eevee" style="width:100%">
         </div>
@@ -27,10 +29,10 @@
                 <line x1="140" y1="90" x2="140" y2="150" class="figure-part"/>
                 <!--Arms (brazos)-->
                 <line x1="140" y1="120" x2="120" y2="100" class="figure-part"/>
-                <line x1="140" y1="120" x2="120" y2="100" class="figure-part"/>
+                <line x1="140" y1="120" x2="160" y2="100" class="figure-part"/>
                 <!--Legs (piernas)-->
                 <line x1="140" y1="150" x2="120" y2="180" class="figure-part"/>
-                <line x1="140" y1="150" x2="120" y2="180" class="figure-part"/>
+                <line x1="140" y1="150" x2="160" y2="180" class="figure-part"/>
             </svg>
 
             <div class="wrong-lettes-container">
@@ -45,19 +47,8 @@
             <div class="popup-container" id="popup-container">
                 <div class="vEmergente">
                 <h2 id="final-message"></h2>
-                <h3 id="final-message-reveal-word"></h3>
-                <!--<img id="lista-imagenes" class="image" src="img/eevee.png" />-->              
-                <div id="output-image" class="image" >
-                    <img class="image" value="flareon" />
-                    <img class="image" value="vaporeon" />
-                    <img class="image" value="jolteon" />
-                    <img class="image" value="espeon"  />
-                    <img class="image" value="umbreon" />
-                    <img class="image" value="glaceon" />
-                    <img class="image" value="leafeon" />
-                    <img class="image" value="sylveon" />            
-                </div>
-
+                <h3 id="final-message-reveal-word"></h3>          
+                <div id="output-image" class="image" ></div>
                 <button id="play-button">Volver a jugar</button>
                 </div>
             </div>
@@ -67,8 +58,24 @@
                 <p>Ya se ingresó esa letra</p>
             </div>
 
-            <script src="scripts.js"></script>    
+            <footer>
+                <div class="footer-content">
+                    <h3>CarlosMoragaDev</h3>
+                    <ul class="socials">
+                        <li><a href="https://github.com/CarlosMoragaDev"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/carlos-moraga-vergara/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2023 hangman. diseñado por: <span>Carlos Moraga</span> </p>
+    
+                </div>
+            </footer>
+
+       
         </body>
+
+        <script src="scripts.js"></script>      
         
         
     </html>

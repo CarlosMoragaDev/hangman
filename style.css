@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
 body {
-    background-color: #0297b1;
+    background: #09aac7;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -12,10 +15,91 @@ body {
     height: 80vh;
     margin: 0;
     overflow: hidden;
+
 }
 
-h1 {
-    margin: 20px 0 0;
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8em;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.title1{
+  justify-content: center;
+  margin-left: 75px;
 }
 
 .eeveePh {
@@ -38,11 +122,12 @@ h1 {
 
 
 .game-container {
-    padding: 20px 30px;
+    padding: 30px 40px;
     position: relative;
     margin: auto;
-    height: 350px;
-    width: 450px;
+    height: 450px;
+    width: 550px;
+    margin-bottom: 100px;
 }
 
 .figure-container { 
@@ -107,7 +192,7 @@ h1 {
 }
 
 .vEmergente {
-  background: #b929a6;
+  background: #33947f;
   border-radius: 5px;
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -116,8 +201,8 @@ h1 {
 
 .vEmergente button {
   cursor: pointer;
-  background-color: #fff;
-  color: #b929a6;
+  background-color: rgb(248, 86, 86);
+  color: #ffffff;
   border: 0;
   margin-top: 20px;
   padding: 12px 20px;
@@ -149,8 +234,5 @@ h1 {
   transform: translateY(-50px);
 }
 
-footer{
-  background-color: darkslategrey;
-  align-items: center;
-  text-emphasis-color: white;
-}
+
+
