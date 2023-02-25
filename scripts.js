@@ -49,56 +49,56 @@ function mostrarPalabra(){
 
     if (innerWord === palabraSeleccionada){
         if (palabraSeleccionada === 'flareon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Flareon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img class= "image" src="img/flareon.png"></img>';
             playable = false;
         }       
         else if (palabraSeleccionada === 'vaporeon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Vaporeon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/vaporeon.png" class= "image" ></img>' ;
             playable = false;
         }
         else if (palabraSeleccionada === 'jolteon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Jolteon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/jolteon.jpg"  class= "image" ></img>' ;
             playable = false;
         }
         else if (palabraSeleccionada === 'espeon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Espeon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/espeon.png" class= "image" ></img>' ;
             playable = false;
         }
         else if (palabraSeleccionada === 'umbreon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Umbreon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/umbreon.png" class= "image"></img>' ;
             playable = false;
         }
         else if (palabraSeleccionada === 'glaceon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Glaceon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/glaceon.png" class= "image" ></img>' ;
             playable = false;
         }
         else if (palabraSeleccionada === 'leafeon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Leafeon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/leafeon.png" class= "image" ></img>' ;
             playable = false;
         }
         else if (palabraSeleccionada === 'sylveon'){
-            mensajeFinal.innerText = '¡Felicidades adivinaste la evolución!';
+            mensajeFinal.innerText = '¡Felicidades! Adivinaste era Sylveon';
             mensajeFinalPalabraRevelada.innerText = '';
             vEmergente.style.display = 'flex';
             image = '<img src="img/sylveon.png" class= "image"></img>' ;
